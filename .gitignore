@@ -18,6 +18,7 @@ build/
 # Uploads and data
 uploads/
 data/
+*.log
 *.db
 *.sqlite
 *.sqlite3

@@ -2,6 +2,8 @@ import os
 import re
 from flask import Flask
 from flask_cors import CORS
+from flask_limiter.errors import RateLimitExceeded
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 # ═══════════════════════════════════════════════════════════
 # Sentry — auto-report unhandled backend exceptions in real time.
@@ -72,6 +74,15 @@ from routes.dhan_routes import dhan_bp
 from services.session_security_service import SessionAccessDenied, enforce_session_access
 
 app = Flask(__name__)
+if os.getenv("TRUST_PROXY_HEADERS", "true").strip().lower() in {"1", "true", "yes", "on"}:
+    app.wsgi_app = ProxyFix(
+        app.wsgi_app,
+        x_for=int(os.getenv("TRUST_PROXY_X_FOR", "1")),
+        x_proto=int(os.getenv("TRUST_PROXY_X_PROTO", "1")),
+        x_host=int(os.getenv("TRUST_PROXY_X_HOST", "1")),
+        x_port=int(os.getenv("TRUST_PROXY_X_PORT", "1")),
+    )
+
 ALLOWED_ORIGINS = [
     o.strip() for o in
     re.split(r"[,\n]+", os.getenv(
@@ -85,10 +96,57 @@ ALLOWED_ORIGINS = [
 ]
 # Allow Vercel preview deployments via regex pattern (Flask-CORS supports this)
 ALLOWED_ORIGINS.append(r"https://valvo-intelligence-final.*\.vercel\.app")
-CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
+CORS(
+    app,
+    origins=ALLOWED_ORIGINS,
+    supports_credentials=True,
+    allow_headers=[
+        "Authorization",
+        "Content-Type",
+        "X-Admin-Token",
+        "X-Backend-Access",
+        "X-Client-Device-ID",
+        "X-Cron-Secret",
+        "X-Proxy-Secret",
+    ],
+    expose_headers=[
+        "Retry-After",
+        "X-RateLimit-Limit",
+        "X-RateLimit-Remaining",
+        "X-RateLimit-Reset",
+    ],
+)
 
 from extensions import limiter
 limiter.init_app(app)
+
+
+@app.errorhandler(RateLimitExceeded)
+def handle_rate_limit_exceeded(exc):
+    """Return JSON for rate-limit failures instead of Flask's HTML page."""
+    base_response = exc.get_response()
+    retry_after = base_response.headers.get("Retry-After")
+    payload = {
+        "error": "Too many requests",
+        "code": "rate_limit_exceeded",
+        "message": "Too many requests from this client. Please retry after the cooldown window.",
+        "limit": str(exc.description),
+    }
+    if retry_after:
+        payload["retry_after"] = retry_after
+
+    response = _jsonify(payload)
+    response.status_code = 429
+    for header in (
+        "Retry-After",
+        "X-RateLimit-Limit",
+        "X-RateLimit-Remaining",
+        "X-RateLimit-Reset",
+    ):
+        value = base_response.headers.get(header)
+        if value is not None:
+            response.headers[header] = value
+    return response
 
 # ═══════════════════════════════════════════════════════════
 # AUTH MIDDLEWARE — validates Supabase JWT on ALL endpoints
