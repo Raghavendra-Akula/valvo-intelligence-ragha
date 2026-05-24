@@ -1,0 +1,17 @@
+[Unit]
+Description=Valvo Daily Fundamentals Sync — 7-day window, skip shareholding
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=Vamshi
+Group=Vamshi
+WorkingDirectory=/home/Vamshi/fundamentals
+ExecStart=/home/Vamshi/venv/bin/python3 /home/Vamshi/fundamentals/run_daily_sync.py --days 7 --skip-shareholding
+TimeoutStartSec=2h
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

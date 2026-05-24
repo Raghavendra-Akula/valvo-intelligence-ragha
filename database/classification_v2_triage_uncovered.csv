@@ -1,0 +1,281 @@
+symbol,company_name,v1_sector,top_segment,top_pct,suggested_v2_bucket,notes
+# ─── Paper & Pulp (no V2 sub-sector yet — candidate for new bucket "paper-pulp") ───
+ANDHRAPAP,Andhra Paper,Basic Materials,"Manufacture and sale of pulp, paper and paperboard",100,paper-pulp,clean candidate
+GENUSPAPER,Genus Paper & Boards,Basic Materials,Paper Business,92.91,paper-pulp,
+JKPAPER,JK Paper,Basic Materials,Paper and Packaging,95.72,paper-pulp,
+MALUPAPER,Malu Paper Mills,Basic Materials,Paper,100,paper-pulp,
+NRAIL,N R Agarwal Industries,Basic Materials,Paper,100,paper-pulp,
+PAKKA,Pakka,Basic Materials,Paper & Pulp,83.12,paper-pulp,
+PDMJEPAPER,Pudumjee Paper Products,Basic Materials,Paper,91.68,paper-pulp,
+RUCHIRA,Ruchira Papers,Basic Materials,PAPER AND PAPER PRODUCTS,100,paper-pulp,
+SESHAPAPER,Seshasayee Paper & Boards,Basic Materials,Paper is the only reportable segment,100,paper-pulp,
+SHREYANIND,Shreyans Industries,Basic Materials,Writing and Printing Paper,100,paper-pulp,
+STARPAPER,Star Paper Mills,Basic Materials,Paper and Paper Board,100,paper-pulp,
+TNPL,Tamil Nadu Newsprint & Papers,Basic Materials,Paper & Paper Board,92,paper-pulp,
+WSTCSTPAPR,West Coast Paper Mills,Basic Materials,Paper and Paper Board,90.75,paper-pulp,
+ASTRON,Astron Paper & Board Mill,Basic Materials,— no segments —,,paper-pulp,name_override
+BALKRISHNA,Balkrishna Paper Mills,Consumer Cyclical,Paper and Paper Board,100,paper-pulp,sector mis-tagged in V1
+# ─── Plywood / MDF / Panels (candidate bucket "plywood-panels") ───
+ARCHIDPLY,Archidply,Basic Materials,Plywood and Allied Products,48.32,plywood-panels,
+CENTURYPLY,Century Plyboards,Basic Materials,Plywood and Allied Products,52.58,plywood-panels,
+GREENPANEL,Greenpanel Industries,Basic Materials,Medium density fibreboards and allied products,93.24,plywood-panels,
+GREENPLY,Greenply Industries,Basic Materials,Plywood and allied products,75.66,plywood-panels,
+WIPL,Western India Ply,Basic Materials,WOOD AND WOOD BASE,100,plywood-panels,
+EUROPRATIK,Euro Pratik Sales,Basic Materials,WALL PANEL AND LAMINATES,100,plywood-panels,
+# ─── Agrochemicals / Fertilizers / Seeds (candidate "agri-inputs") ───
+BAYERCROP,Bayer Crop Science,Basic Materials,— no segments —,,agri-inputs,name_override
+BESTAGRO,Best Agrolife,Basic Materials,AGROCHEMICALS,100,agri-inputs,
+BOHRAIND,Bohra Industries,Basic Materials,Fertilizer Business,,agri-inputs,
+BSHSL,Bombay Super Hybrid Seeds,Basic Materials,agriculture hybrid seeds,100,agri-inputs,
+HERANBA,Heranba Industries,Basic Materials,Single segment,100,agri-inputs,name_override
+INDOUS,Indo Us Bio-Tech,Basic Materials,Agricultural,100,agri-inputs,
+KHAICHEM,Khaitan Chemicals & Fertilizers,Basic Materials,Fertilizers,76.61,agri-inputs,
+KSCL,Kaveri Seed Company,Basic Materials,Produce and selling of sowing seeds,100,agri-inputs,
+NACLIND,NACL Industries,Basic Materials,AGRI INPUT,100,agri-inputs,
+NAGAFERT,Nagarjuna Fertilizers & Chemicals,Basic Materials,— no segments —,,agri-inputs,name_override
+NARMADA,Narmada Agrobase,Basic Materials,Agriculture produces,100,agri-inputs,
+NATHBIOGEN,Nath Bio-Genes,Basic Materials,horticulture,100,agri-inputs,
+NOVAAGRI,Nova Agritech,Basic Materials,Agri Input Industry,100,agri-inputs,
+RALLIS,Rallis,Basic Materials,Agri Inputs,95.39,agri-inputs,
+ANTGRAPHIC,Antarctica,Consumer Cyclical,Agriculture and Others,100,agri-inputs,sector mis-tag
+AGRITECH,Agri-Tech,Consumer Defensive,HORTICULTURE CROPS,100,agri-inputs,
+SHANTI,Shanti Overseas,Consumer Defensive,Agriculture,100,agri-inputs,
+# ─── Packaging — Flexible / Rigid / Cartons (candidate "packaging") ───
+AERONEU,Aeroflex Neu,Consumer Cyclical,Flexible Packaging Solution Activity,96.96,packaging,
+AGI,AGI Greenpac,Consumer Cyclical,Packaging Division,100,packaging,
+BBTCL,B&B Triplewall Containers,Consumer Cyclical,Manufacturer of Kraft Paper and Corrugated Boxes,100,packaging,
+COSMOFIRST,Cosmo First,Consumer Cyclical,Packaging films,90.08,packaging,
+EMMBI,Emmbi Industries,Consumer Cyclical,Polymer Based Multiple Products,100,packaging,
+EPL,EPL,Consumer Cyclical,AMESA,33.75,packaging,name_override (laminated tubes)
+HUHTAMAKI,Huhtamaki PPL,Consumer Cyclical,Consumer Packaging,100,packaging,
+JINDALPOLY,Jindal Poly Films,Consumer Cyclical,packaging films,52.5,packaging,
+MOLDTKPAC,Mold-Tek Packaging,Consumer Cyclical,Packaging Containers,100,packaging,
+NAHARPOLY,Nahar Poly Films,Consumer Cyclical,BOPP FILMS,100,packaging,
+PEARLPOLY,Pearl Polymers,Consumer Cyclical,Trading of Pet bottles and containers,100,packaging,
+PYRAMID,Pyramid Technoplast,Consumer Cyclical,Packaging,100,packaging,
+RPPL,Rajshree Polypack,Consumer Cyclical,Plastic Packging Product,100,packaging,
+TCPLPACK,TCPL Packaging,Consumer Cyclical,Packaging,100,packaging,
+TIMETECHNO,Time Technoplast,Consumer Cyclical,Polymer Products,62.25,packaging,
+UFLEX,UFLEX,Consumer Cyclical,Flexible Packaging Activities,96.46,packaging,
+WORTHPERI,Worth Peripherals,Consumer Cyclical,Manufacture and Sale of Corrugated Boxes,100,packaging,
+ORIENTLTD,Orient Press,Consumer Cyclical,Printing,43.36,packaging,
+BALAJEE,Shree Tirupati Balajee Agro,Consumer Cyclical,FIBC BAGS,100,packaging,
+# ─── Hospitals / Healthcare Services (candidate "hospitals-services") ───
+AGARWALEYE,Dr. Agarwal's Health Care,Healthcare,Eye care related sales and services,100,hospitals-services,
+GAUDIUMIVF,Gaudium IVF & Women Health,Healthcare,Health Care Business,100,hospitals-services,
+GPTHEALTH,GPT Healthcare,Healthcare,Healthcare Service,100,hospitals-services,
+HCG,Healthcare Global Enterprises,Healthcare,Healthcare Sector,100,hospitals-services,
+INDRAMEDCO,Indraprastha Medical Corporation,Healthcare,HEALTHCARE,100,hospitals-services,
+KIMS,Krishna Institute of Medical Sciences,Healthcare,Healthcare Segment,100,hospitals-services,
+MEDIASSIST,Medi Assist Healthcare,Healthcare,Health Management Services,100,hospitals-services,
+NEPHROPLUS,Nephrocare Health Services,Healthcare,Healthcare,100,hospitals-services,
+SURAKSHA,Suraksha Diagnostic,Healthcare,DIAGNOSTIC,100,hospitals-services,
+LAXMIDENTL,Laxmi Dental,Healthcare,Laboratory Business,69.97,hospitals-services,
+LENSKART,Lenskart Solutions,Healthcare,India,60.03,specialty-retail,care/retail
+MAXIND,Max India,Healthcare,Assisted Care,62.42,hospitals-services,
+NURECA,Nureca,Healthcare,Home Healthcare and Wellness Products,100,hospitals-services,
+# ─── Pharma — CDMO / API / OTC ───
+ABBOTINDIA,Abbott,Healthcare,— no segments —,,pharma-formulations,name_override
+AMRUTANJAN,Amrutanjan Health Care,Healthcare,OTC Products,71.29,pharma-otc,
+ANTHEM,Anthem Biosciences,Healthcare,CRDMO,78.75,pharma-cdmo,
+CAPLIPOINT,Caplin Point Laboratories,Healthcare,Rest of the World,75.1,pharma-formulations,
+HESTERBIO,Hester Biosciences,Healthcare,Poultry Healthcare,66.03,animal-health,new bucket
+NATCAPSUQ,Natural Capsules,Healthcare,Capsules,90.46,pharma-excipients,
+NEULANDLAB,Neuland Laboratories,Healthcare,USA and North America,43.62,pharma-cdmo,
+SUVEN,Suven Life Sciences,Healthcare,Research & Development single segment,100,pharma-cdmo,
+VIMTALABS,Vimta Labs,Healthcare,CONTRACT RESEARCH AND TESTING SERVICES,100,pharma-cro,
+SIGACHI,Sigachi Industries,Healthcare,Pharmaceuticals,100,pharma-excipients,
+JSLL,Jeena Sikho Lifecare,Healthcare,Ayurvedic products/medicines,54.93,pharma-otc,
+ORTINGLOBE,Ortin Global,Healthcare,DRUGS AND MEDICINES,100,pharma-formulations,
+INDGN,Indegene,Healthcare,Enterprise Commercial Solutions,71.69,healthcare-it,
+IKS,Inventurus Knowledge Solutions,Healthcare,CARE ENABLEMENT PLATFORM,100,healthcare-it,
+SAGILITY,Sagility,Healthcare,Business Process Management Services,100,healthcare-it,
+TARSONS,Tarsons Products,Healthcare,India,77.83,labware-consumables,new bucket
+FISCHER,Fischer Medical Ventures,Healthcare,Healthcare Equipment and supplies,100,med-devices,
+BALAXI,Balaxi Pharmaceuticals,Healthcare,SPECIALISED WHOLESALE,100,pharma-distribution,
+# ─── Education / Edtech (candidate "education-edtech") ───
+CPEDU,Career Point Edutech,Consumer Defensive,Education,100,education-edtech,
+COMPUSOFT,Compucom Software,Consumer Defensive,Learning Solutions,69.87,education-edtech,
+GLOBAL,Global Education,Consumer Defensive,Business Support Activities,69.29,education-edtech,
+GTECJAINX,G-Tec Jainx Education,Consumer Defensive,Information Technology,100,education-edtech,
+JARO,Jaro Inst of Tech Mgmt & Research,Consumer Defensive,Education Program Services,100,education-edtech,
+KEEPLEARN,DSJ Keep Learning,Consumer Defensive,Education,100,education-edtech,
+MTEDUCARE,MT Educare,Consumer Defensive,Coaching,100,education-edtech,
+NIITLTD,NIIT,Consumer Defensive,Education & Training Services,100,education-edtech,
+NIITMTS,NIIT Learning Systems,Consumer Defensive,Education & Training Services,100,education-edtech,
+PWL,Physicswallah,Consumer Defensive,Ed-Tech,100,education-edtech,
+TREEHOUSE,Tree House Education,Consumer Defensive,Not applicable,100,education-edtech,
+VERANDA,Veranda Learning Solutions,Consumer Defensive,Commerce,62.05,education-edtech,
+SCHAND,S Chand & Company,Communication Services,Publishing Company,100,education-edtech,publisher
+CRIZAC,Crizac,Consumer Defensive,INTERNATIONAL STUDENT RECRUITMENT,100,education-edtech,
+# ─── Software / IT Services (candidate "it-services-mid-cap") ───
+TATAELXSI,Tata Elxsi,Technology,Software development & services,97.43,embedded-rd-services,
+EMUDHRA,eMudhra,Technology,Enterprise solutions- Outside India,61.57,cybersecurity,
+KELLTONTEC,Kellton Tech Solutions,Technology,Digital Transformation,82.95,it-services,
+NPST,Network People Services Tech,Technology,Software and Payment Solution,100,fintech-saas,
+SUBEXLTD,Subex,Technology,Information Technology,100,telecom-software,
+TRACXN,Tracxn Technologies,Technology,Platform Subscription,100,saas-data,
+URBANCO,Urban Company,Technology,India consumer services,69.13,internet-platforms,
+INFOBEAN,InfoBeans Technologies,Technology,Information Technology,100,it-services,
+INNOVANA,Innovana Thinklabs,Technology,Software Product Sales,52.83,saas-products,
+IRIS,IRIS RegTech Solutions,Technology,SupTech,59.28,fintech-saas,
+QUICKHEAL,Quick Heal Technologies,Technology,SECURITY SOLUTIONS,100,cybersecurity,
+SOFTTECH,SoftTech Engineers,Technology,— no segments —,,saas-products,name_override
+GENESYS,Genesys International Corp,Technology,Geographical information system,100,gis-mapping,
+# ─── Networking / Hardware ───
+DLINKINDIA,D-Link,Technology,Networking Products,100,networking-hw,
+NELCO,NELCO,Technology,Networking systems,100,networking-hw,
+BBOX,Black Box,Technology,System integration,84.16,it-services,
+# ─── Defence / Drones / Aerospace ───
+IDEAFORGE,Ideaforge Technology,Technology,Operating segment,100,defence-electronics,name_override
+SIGMAADV,Sigma Advanced Systems,Industrials,Aerospace and Defence,100,defence-electronics,
+# ─── Media / Publishing / Advertising ───
+AFFLE,Affle 3i,Communication Services,Consumer platform,100,adtech,
+BCG,Brightcom Group,Communication Services,Digital Market segment,95.16,adtech,
+DBCORP,DB Corp,Communication Services,Printing Publishing and allied business,93.22,print-media,
+DISHTV,Dish TV,Communication Services,Direct To Home (DTH) Service,100,broadcasting,
+JAGRAN,Jagran Prakashan,Communication Services,Printing publishing and digital,77.38,print-media,
+MPSLTD,MPS,Communication Services,Research Solutions,63.31,it-services,
+SIGNPOST,Signpost India,Communication Services,Advertising Business,100,adtech,
+RADIOCITY,Music Broadcast,Communication Services,— no segments —,,broadcasting,name_override
+# ─── Cement / Building Materials (V1 already has cement) ───
+GRASIM,Grasim Industries,Basic Materials,Building Material,56.22,cement,
+SANGHIIND,SANGHI INDUSTRIES LTD,Basic Materials,— no segments —,,cement,name_override
+# ─── Specialty / Niche ───
+DELTACORP,Delta Corp,Consumer Cyclical,Casino Gaming Division,91.81,gaming-leisure,
+WONDERLA,Wonderla Holidays,Consumer Cyclical,Amusement parks and Resort,68.82,gaming-leisure,
+ETHOSLTD,Ethos,Consumer Cyclical,Watches,100,specialty-retail,
+KDDL,KDDL,Consumer Cyclical,Watches accessories and luxury items,79.37,specialty-retail,
+LANDMARK,Landmark Cars,Consumer Cyclical,Dealership of Cars,100,auto-dealerships,new bucket
+SHOPERSTOP,Shoppers Stop,Consumer Cyclical,Operating Segment,100,specialty-retail,
+THOMASCOOK,Thomas Cook,Consumer Cyclical,Travel and related services,78.21,travel-tourism,
+SMLMAH,SML Mahindra,Consumer Cyclical,COMMERCIAL VEHICLE,100,auto-cv,already in V1?
+PCJEWELLER,PC Jeweller,Consumer Cyclical,Jewelllery,100,jewellery,already in V1?
+SHANTIGOLD,Shanti Gold International,Consumer Cyclical,Wholesaler & Manufacturer of Gold Ornaments,100,jewellery,
+NAHARSPING,Nahar Spinning Mills,Consumer Cyclical,Textiles,100,textiles,
+SHEKHAWATI,Shekhawati Industries,Consumer Cyclical,Textile Operations,100,textiles,
+PAVNAIND,Pavna Industries,Consumer Cyclical,Automotive Segment,100,auto-ancillaries,already in V1?
+ATLASCYCLE,Atlas Cycle (Haryana),Consumer Cyclical,CYCLES,100,bicycles,niche
+# ─── FMCG / Consumer Goods ───
+GILLETTE,Gillette,Consumer Defensive,Grooming,81.91,fmcg-personal,
+PGHH,P&G Hygiene and Health Care,Consumer Defensive,Hygiene and Health Care,100,fmcg-personal,
+KAYA,Kaya,Consumer Defensive,SKIN AND HAIR CARE,100,fmcg-personal,
+KRITINUT,Kriti Nutrients,Consumer Defensive,Oil Seed Extraction and Refining,100,edible-oils,
+VENKEYS,Venkys,Consumer Defensive,Poultry and Poultry Products,50.66,poultry,
+AVADHSUGAR,Avadh Sugar & Energy,Consumer Defensive,Sugar,75.94,sugar,
+# ─── Financial — Ratings / Exchanges / NBFCs ───
+BSE,BSE,Financial Services,Stock Exchange Services,100,exchanges-mkt-infra,name_override
+CARERATING,CARE Ratings,Financial Services,Ratings and related services,88.61,credit-ratings,name_override
+CRISIL,CRISIL,Financial Services,Research Analytics and Solutions,69.51,credit-ratings,name_override
+ICRA,ICRA,Financial Services,Ratings & ancillary services,52.64,credit-ratings,name_override
+SAMMAANCAP,Sammaan Capital,Financial Services,Investing and Financing related activities,100,nbfc-housing,already in V1?
+NAGREEKCAP,Nagreeka Capital & Infrastructure,Financial Services,Non-Banking Finance Company,100,nbfc-other,
+# ─── Real Estate / Construction ───
+PARSVNATH,Parsvnath Developers,Real Estate,Real Estate Activity,100,real-estate-residential,V1 has real-estate?
+PENINLAND,Peninsula Land,Real Estate,Real Estate and Constructions,100,real-estate-residential,
+EMBDL,Embassy Developments,Residential Commercial Projects,— no segments —,,real-estate-residential,sector mis-tagged
+GLOBECIVIL,Globe Civil Projects,Industrials,Engineering Procurement & Construction,100,construction-epc,
+HILINFRA,Highway Infrastructure,Industrials,Toll Division,81.85,roads-bot,
+MADHUCON,Madhucon Projects,Industrials,— no segments —,,construction-epc,name_override
+MBLINFRA,MBL Infrastructures,Industrials,— no segments —,,construction-epc,name_override
+# ─── Capital Goods — uncategorised ───
+KECL,Kirloskar Electric Co,Industrials,Rotating machines,44.26,electricals-rotating-machines,
+KHAITANLTD,Khaitan,Industrials,Electrical Goods,99.62,consumer-electricals,or capital-electricals
+MEIL,Mangal Electrical Industries,Industrials,Other Electrical Equipment,100,t-and-d-equipment,
+LOKESHMACH,Lokesh Machines,Industrials,Machinery Division,92,machine-tools,
+JKIPL,Jinkushal Industries,Industrials,Wholesale of Machinery Equipment,100,machinery-distribution,
+SEJALLTD,Sejal Glass,Industrials,Architectural Glass Manufacturing,100,architectural-glass,
+# ─── Steel / Metals (V1 may have these) ───
+RUDRA,Rudra Global Infra Products,Basic Materials,Iron and Steel,100,steel,already in V1?
+MANAKALUCO,Manaksia Aluminium Company,Basic Materials,Metal,100,metals-non-ferrous,
+MANAKSTEEL,Manaksia Steels,Basic Materials,Metals,100,steel,already in V1?
+SHIVAUM,SHIV AUM STEELS LIMITED,Basic Materials,— no segments —,,steel,name_override
+RAJMET,Rajnandini Metal,Basic Materials,— no segments —,,metals-non-ferrous,name_override
+IFGLEXPOR,IFGL Refractories,Basic Materials,India,57.46,refractories,
+MIDWESTLTD,Midwest,Basic Materials,Granite,100.04,stone-aggregates,
+HINDCON,Hindcon Chemicals,Basic Materials,— no segments —,,specialty-chemicals,name_override
+SADHNANIQ,Sadhana Nitrochem,Basic Materials,heavy organic chemicals,100,specialty-chemicals,
+PREMIERPOL,PREMIER POLYFILM LTD,Basic Materials,— no segments —,,packaging,name_override
+# ─── Utilities ───
+CEWATER,Concord Enviro Systems,Utilities,Water Treatment Products and Technologies,100,water-tech,name_override
+ENERGYDEV,Energy Development Company,Utilities,Generating division,100,power-generation,
+RELINFRA,Reliance Infrastructure,Integrated Power Utilities,— no segments —,,power-generation-distribution,name_override
+LIKHITHA,Likhitha Infrastructure,Energy,— no segments —,,oil-gas-pipelines,name_override
+# ─── Misc / unclear / drop ───
+GTL,GTL,Communication Services,— no segments —,,telecom-tower,or drop
+BLACKBUCK,Black Buck,Technology,Truck operator services,98.05,logistics-platform,
+ITI,ITI,Technology,N/A,100,telecom-equipment,public-sector
+AKSHOPTFBR,Aksh Optifibre,Technology,— no segments —,,optical-networking,name_override
+SHYAMTEL,Shyam Telecom,Technology,TELECOM SECTOR,,telecom-equipment,
+NITIRAJ,Nitiraj Engineers,Technology,Weighing Scale,100,instrumentation,
+RISHABH,Rishabh Instruments,Technology,Europe,70.04,instrumentation,
+KRN,KRN Heat Exchanger and Refrigeration,Technology,India,81.35,hvac-equipment,sector mis-tagged
+DCMSIL,DCM SHRIRAM INTERNATNL L,Industrials,— no segments —,,diversified,
+DUCON,Ducon Infratechnologies,Industrials,— no segments —,,construction-epc,
+# ─── Tail with no clean bucket — single-segment generic / data-thin ───
+FILATFASH,Filatex Fashions,Consumer Cyclical,— no segments —,,textiles,name_override
+HAVISHA,Sri Havisha Hospital,Consumer Cyclical,— no segments —,,hospitals-services,name_override
+MOKSH,Moksh Ornaments,Consumer Cyclical,one segment only,100,jewellery,
+PRITI,Priti International,Consumer Cyclical,— no segments —,,furniture,name_override
+SETCO,SETCO AUTOMOTIVE LTD,Consumer Cyclical,— no segments —,,auto-ancillaries,name_override
+SHANKARA,SHANKARA BLDG PRODUCT LTD,Consumer Cyclical,— no segments —,,building-distribution,name_override
+ARROWGREEN,Arrow Greentech,Consumer Cyclical,Hightech Products,81.63,specialty-chemicals,
+BOROSCI,BOROSCI,Consumer Cyclical,Lab glass & Process System,71.94,labware-consumables,
+ANIKINDS,Anik Industries,Consumer Defensive,— no segments —,,diversified,
+BAFNAPH,Bafna Pharmaceuticals,Healthcare,— no segments —,,pharma-formulations,
+BROOKS,Brooks Laboratories,Healthcare,— no segments —,,pharma-formulations,
+DBOL,Dhampur Bio Organics,Consumer Defensive,— no segments —,,sugar,name_override
+JHS,JHS Svendgaard Laboratories,Consumer Defensive,— no segments —,,fmcg-personal,name_override
+KNAGRI,KN Agri Resources,Consumer Defensive,Agri Commodities,99.9,agri-trading,
+KREBSBIO,Krebs Biochemicals & Industries,Healthcare,— no segments —,,pharma-api,
+LASA,Lasa Supergenerics,Healthcare,— no segments —,,pharma-api,
+LYKALABS,Lyka Labs,Healthcare,— no segments —,,pharma-formulations,
+MCLEODRUSS,McLeod Russel,Consumer Defensive,— no segments —,,tea-coffee,name_override
+MGEL,Mangalam Global Enterprise,Consumer Defensive,Agri Products,86.82,agri-trading,
+NECLIFE,Nectar Lifesciences,Healthcare,Pharmaceutical Business Segment,,pharma-formulations,
+SARVESHWAR,Sarveshwar Foods,Consumer Defensive,domestic,94.13,foods-branded,
+SAIPARENT,Sai Parenteral's,Healthcare,— no segments —,,pharma-formulations,
+SAKUMA,Sakuma Exports,Consumer Defensive,— no segments —,,agri-trading,name_override
+ESSENTIA,Integra Essentia,Consumer Defensive,DEALING IN ESSENTIAL ITEMS,91.49,fmcg-distribution,
+CLEDUCATE,CL EDUCATE LIMITED,Consumer Defensive,— no segments —,,education-edtech,name_override
+TAKE,Take Solutions,Healthcare,Life Sciences,,healthcare-it,
+UNIVPHOTO,Universus Photo Imagings,Healthcare,PHOTO FILMS,100,specialty-films,sector mis-tagged
+NAVKARURB,Navkar Urbanstructure,Basic Materials,Civil works and Building,100,construction-epc,sector mis-tagged
+GSLSU,Global Surfaces,Basic Materials,United Arab Emirates,70.06,stone-aggregates,
+KAMOPAINTS,Kamdhenu Ventures,Basic Materials,— no segments —,,paints,name_override (Kamdhenu paint)
+MAGNUM,Magnum Ventures,Basic Materials,— no segments —,,diversified,
+ACCURACY,Accuracy Shipping,Industrials,— no segments —,,logistics-shipping,name_override
+AFFORDABLE,Affordable Robotic & Automation,Industrials,— no segments —,,industrial-automation,name_override
+BANKA,Banka Bioloo,Industrials,— no segments —,,environmental-services,name_override
+RACE,Race Eco Chain,Industrials,— no segments —,,recycling-circular,name_override
+REPL,Rudrabhishek Enterprises,Industrials,— no segments —,,consulting,name_override
+SECMARK,Secmark Consultancy,Industrials,— no segments —,,consulting,name_override
+ART NIRMAN,Art Nirman,Real Estate,— no segments —,,real-estate-residential,
+ICDSLTD,ICDS LTD,Real Estate,— no segments —,,nbfc-other,maybe nbfc not RE
+LPDC,Landmark Property Development,Real Estate,— no segments —,,real-estate-residential,
+OSWALAGRO,Oswal Agro Mills,Real Estate,Investment Activities,99.74,holding-co,sector mis-tag
+AUSOMENT,AuSom Enterprise,Financial Services,Trading of commodities/bullions,100,trading-co,
+BLAL,BEML Land Assets,Financial Services,REAL ESTATE,,real-estate-residential,sector mis-tag
+GLFL,Gujarat Lease Financing,Financial Services,— no segments —,,nbfc-other,
+HBSL,HB Stockholdings,Financial Services,Financial services,100,nbfc-other,
+TFL,Transwarranty Finance,Financial Services,Financial Services,100,nbfc-other,
+NURECA,Nureca,Healthcare,Home Healthcare and Wellness Products,100,med-devices,duplicate above
+PCJEWELLER,PC Jeweller,Consumer Cyclical,Jewelllery,100,jewellery,
+CALSOFT,California Software,Technology,IT AND SOFTWARE DEVELOPMENT,100,it-services,
+CTE,Cambridge Technology Enterprises,Technology,— no segments —,,it-services,name_override
+CURAA,Cura Technologies,Technology,IT and IT enabled services,100,it-services,
+DCI,DC INFOTECH AND COMUN LTD,Technology,— no segments —,,it-services,name_override
+FCSSOFT,FCS Software Solutions,Technology,— no segments —,,it-services,name_override
+GSS,GSS Infotech,Technology,— no segments —,,it-services,name_override
+IZMO,IZMO,Technology,Software Development & Services,100,it-services,
+NINSYS,NINtec Systems,Technology,Software services,100,it-services,
+ORCHASP,Orchasp,Technology,Software Development and Services,100,it-services,
+RSSOFTWARE,RS Software,Technology,— no segments —,,it-services,name_override
+SECURKLOUD,SecureKloud Technologies,Technology,— no segments —,,it-services,name_override
+TREJHARA,Trejhara Solutions,Technology,Single segment,100,it-services,
+PNC,Pritish Nandy Communications,Communication Services,— no segments —,,media-content,name_override
+SAMBHAAV,Sambhaav Media,Communication Services,— no segments —,,print-media,name_override
+ODIGMA,Odigma Consultancy Solutions,Communication Services,— no segments —,,adtech,name_override
+BYKE,The Byke Hospitality,Consumer Cyclical,— no segments —,,hospitality-hotels,name_override
+VAIBHAVGBL,Vaibhav Global,Consumer Cyclical,United State of America,50.43,specialty-retail,
+MHRIL,Mahindra Holidays,Consumer Cyclical,HCRO,51.81,hospitality-hotels,

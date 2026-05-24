@@ -1,0 +1,13 @@
+[Unit]
+Description=Run Valvo Daily Sync every day at 23:00 IST
+Requires=valvo-daily-sync.service
+
+[Timer]
+# 23:00 IST = 17:30 UTC
+OnCalendar=*-*-* 17:30:00
+Persistent=true
+RandomizedDelaySec=120
+Unit=valvo-daily-sync.service
+
+[Install]
+WantedBy=timers.target

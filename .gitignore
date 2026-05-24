@@ -1,0 +1,29 @@
+# Environment files
+.env
+.env.*
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.venv/
+.venv*/
+.pytest_cache/
+dist/
+build/
+
+# Uploads and data
+uploads/
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.sw?
+.DS_Store

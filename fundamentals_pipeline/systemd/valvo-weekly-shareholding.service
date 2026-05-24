@@ -1,0 +1,17 @@
+[Unit]
+Description=Valvo Weekly Shareholding Sync (Sundays 23:30 IST)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=Vamshi
+Group=Vamshi
+WorkingDirectory=/home/Vamshi/fundamentals
+ExecStart=/home/Vamshi/venv/bin/python3 /home/Vamshi/fundamentals/run_daily_sync.py --days 14 --only-shareholding
+TimeoutStartSec=2h
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

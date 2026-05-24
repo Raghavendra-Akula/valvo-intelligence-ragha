@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Valvo Weekly Shareholding — Sundays 23:30 IST
+Requires=valvo-weekly-shareholding.service
+
+[Timer]
+OnCalendar=Sun *-*-* 18:00:00
+Persistent=true
+RandomizedDelaySec=120
+Unit=valvo-weekly-shareholding.service
+
+[Install]
+WantedBy=timers.target
